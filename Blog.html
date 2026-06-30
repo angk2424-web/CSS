@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+         .first {
+            p::first-line {
+            font-weight: bold;
+            }
+            p::first-letter {
+            color: #ff0000;
+            font-size: 30px;
+            }
+         }
+        .paragraph {    
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 10px solid skyblue;
+            border-radius: 5px;
+        }
+        .blockquote {
+            blockquote::before {
+            content: open-quote;
+            }
+            blockquote::after{
+                content: close-quote
+            }
+        }
+         a:link {
+        color: red;
+    }
+
+        a:visited {
+        color: purple;
+    }
+
+        a:hover {
+        font-weight: underline;
+    }
+
+        a:active {
+        color: blue;
+    }
+    div.second {
+        position:fixed;
+        left:40%;
+        float: left;
+        border: 2px solid black;
+        padding: 10px;
+    }
+    div.third{
+        position:fixed;
+        right:40%;
+        float:right;
+        border: 2px solid black;
+        padding: 10px;
+    }
+div + div{
+    color: aqua;
+    font-weight:bold;
+    border-radius: 80%;
+    background-color: black;
+}
+body{
+    background-image: url("https://tse4.mm.bing.net/th/id/OIP.6Cy2F440fLu_UZ-W09oC7QHaDT?cb=thfc1falcon3&rs=1&pid=ImgDetMain&o=7&rm=3");
+}
+.width{
+    max-width: fit-content;
+}
+    </style>
+</head>
+<body>
+    <section class="first paragraph blockquote">
+    <h1>Nomadic Matt</h1>
+    <h2>Matthew Kepnes</h2>
+    <p>Everything from his website’s design to his personal writing voice makes for an engaging reading experience. Not to mention that the name “Nomadic Matt” really sticks with me.Matthew Kepnes, AKA Nomadic Matt, was once a cubicle worker who admittedly wasn’t always a big traveler. On his first trip back in 2004, he went to Costa Rica where his perspective in life transformed forever. </p>
+    <blockquote>A single trip — that’s how easy it is to fall in love with travel.</blockquote>
+    </section>
+    <section>
+    <ul class="paragraph width">
+        <li><a href="https://www.nomadicmatt.com/">Nomadic Matt</a></li>
+        <li><a href="https://www.bing.com/search?q=youtube&form=ANNTH1&refig=6a43ec57eb24495f9a0490da3db6cf9e&pc=LCTS&adppc=EDGEXST">Youtube</a></li>
+        <li><a href="https://masterblogging.com/best-travel-blogs/#1">Best Travel Blogs</a></li>
+    </ul>
+    </section>
+<div class="second" style="background-color: #f0f0f0;">
+    <h4>Travel Blogs</h4>
+    </div>
+<div class="third">
+    <h4>Travel World</h4>
+    </div>
+    </body>
+</html>
