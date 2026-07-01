@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Blog Section</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+
+    .blog-section {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        background-color: #f5f5f5;
+    }
+
+    .blog-post {
+        flex: 1;
+        border: 1px solid #ccc;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Style images ending with .jpg */
+    img[src$=".jpg"] {
+        width: 100%;
+        height: auto;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    /* Highlight links starting with https */
+    a[href^="https"] {
+        color: red;
+        font-weight: bold;
+    }
+
+    /* Small screens */
+    @media (max-width: 600px) {
+        .blog-section {
+            flex-direction: column;
+        }
+
+        .blog-post {
+            font-size: 14px;
+        }
+    }
+
+    /* Portrait orientation */
+    @media (orientation: portrait) {
+        .blog-section {
+            background-color: lightyellow;
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1>Featured Blogs</h1>
+
+<div class="blog-section">
+
+    <div class="blog-post">
+        <h2>Web Development Basics</h2>
+        <img src="https://th.bing.com/th/id/OIP.nh4rUO6uSdBUQQMJnEUsmQHaE7?w=305&h=202&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3
+        <p>Learn the fundamentals of HTML, CSS, and JavaScript.</p>
+        <a href="https://www.bing.com/images/search?q=web+development&form=HDRSC3&first=1">Read More</a>
+    </div>
+
+    <div class="blog-post">
+        <h2>CSS Tricks</h2>
+        <img src="https://th.bing.com/th/id/OIP.6jmPZt63W4gAGSTp55JmGQHaEH?w=318&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3
+        <p>Discover useful CSS selectors and responsive design tips.</p>
+        <a href="https://www.bing.com/images/search?q=css%20tricks&qs=n&form=QBIR&sp=-1&lq=0&pq=css%20tricks&sc=10-10&cvid=E6716D93662B4390A17654A5D65692FC&first=1">Read More</a>
+    </div>
+
+    <div class="blog-post">
+        <h2>Programming Tips</h2>
+        <img src="https://th.bing.com/th/id/OIP.nh4rUO6uSdBUQQMJnEUsmQHaE7?w=305&h=202&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Programming">
+        <p>Improve your coding skills with practical techniques.</p>
+        <a href="http://example.com/programming">Read More</a>
+    </div>
+
+</div>
+
+</body>
+</html>
