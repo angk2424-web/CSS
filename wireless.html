@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Card</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .product-card {
+        width: 250px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        text-align: left;
+        background-color: white;
+    }
+
+    /* Product Image */
+    .product-image {
+        width: 100%;
+        border: 2px solid black;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .buy-btn {
+        padding: 10px 15px;
+        background-color: green;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Small Screens */
+    @media (max-width: 600px) {
+        .product-card {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+
+        .buy-btn {
+            font-size: 14px;
+        }
+    }
+
+    /* Landscape Mode */
+    @media (orientation: landscape) {
+        .product-card {
+            background-color: lightblue;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="product-card">
+    <img src="https://via.placeholder.com/250x180"
+         alt="Product Image"
+         class="product-image">
+
+    <h2>Wireless Headphones</h2>
+
+    <button class="buy-btn">Buy Now</button>
+</div>
+
+</body>
+</html>
